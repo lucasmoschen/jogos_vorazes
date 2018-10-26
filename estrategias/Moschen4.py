@@ -25,7 +25,7 @@ class MeuJogador(Jogador):
                 escolhas = ['c']*n_jogadores
             return escolhas
         else: 
-            if reputacao > 0.3:
+            if reputacao_atual > 0.3:
                 escolhas = ['d']*n_jogadores
             else:
                 escolhas = ['c']*n_jogadores

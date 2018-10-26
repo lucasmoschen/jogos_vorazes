@@ -17,14 +17,13 @@ class MeuJogador(Jogador):
             else:
                 escolhas = ['d']*n_jogadores
             return escolhas
-        else: #if n_jogadores >= 7:
+        else: 
             if reputacao_atual > 0.4:
                 escolhas = ['d']*n_jogadores
             else:
                 escolhas = ['c']*n_jogadores
             return escolhas
-        #else:           
-
+        
     def resultado_da_cacada(self, comida_ganha):
         pass
 
