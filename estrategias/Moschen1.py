@@ -8,4 +8,3 @@ class MeuJogador(Jogador):
         else:
             escolhas = ['d']*len(reputacoes_dos_jogadores)
         return escolhas
-
