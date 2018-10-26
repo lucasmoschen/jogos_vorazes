@@ -6,13 +6,13 @@ class MeuJogador(Jogador):
 
     def __init__(self):
         self._name = "Moschen4"
-        n_inicial_jogadores = 0
+        self.n_inicial_jogadores = 0
         
     def escolha_de_cacada(self,rodada,comida_atual,reputacao_atual,m,reputacoes_dos_jogadores):
         n_jogadores = len(reputacoes_dos_jogadores)
         if rodada <=1:
-            n_inicial_jogadores = n_jogadores
-        if n_jogadores > n_inicial_jogadores/4:
+            self.n_inicial_jogadores = n_jogadores
+        if n_jogadores > self.n_inicial_jogadores/4:
             if rodada%2 == 1:
                 escolhas = ['c']*n_jogadores
             else:
