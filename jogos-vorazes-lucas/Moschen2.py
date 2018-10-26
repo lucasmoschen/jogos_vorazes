@@ -6,8 +6,10 @@ class MeuJogador(Jogador):
 
     def __init__(self):
         self._name = "Moschen2"
+        self.hist_comida = []
         
     def escolha_de_cacada(self,rodada,comida_atual,reputacao_atual,m,reputacoes_dos_jogadores):
+        self.hist_comida.append(comida_atual)
         n_jogadores = len(reputacoes_dos_jogadores)
         if rodada == 1:
             n_inicial_jogadores = n_jogadores
@@ -28,5 +30,6 @@ class MeuJogador(Jogador):
         pass
 
     def fim_da_rodada(self, recompensa, m, numero_de_cacadores):
+        print(self.hist_comida[-1])
         pass
 
