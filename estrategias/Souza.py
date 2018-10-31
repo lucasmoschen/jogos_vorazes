@@ -72,14 +72,14 @@ class MeuJogador(Jogador):
     def str1(self, x):
         if x == 0:
             return False
-        elif x >= 8.5:
+        elif x >= 0.85:
             p = np.random.rand()
             return p >= 0.5
         else:
             p = np.random.rand()
             if p >= 0.85:
                 p = 0.85
-                return np.random.rand() < p
+            return np.random.rand() < p
         
     #def check_a(self):
     #    return sum(self.actions[-10:]) > 6
